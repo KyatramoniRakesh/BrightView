@@ -1,0 +1,148 @@
+.about-section {
+  padding: 2rem 3rem;
+  background-color: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.about-image,
+.about-text {
+  flex: 1 1 48%;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  text-align: justify;
+}
+
+.about-text h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  text-align: justify;
+}
+
+.highlight {
+  color: #2e8cfe;
+  font-size: 1.6rem;
+}
+
+.mission-values h4 {
+  color: #2e8cfe;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+
+}
+.mission-values {
+  text-align: left; 
+}
+
+.about-text p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+.about-stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eaf4ff; 
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.stat-box {
+  flex: 1;
+  position: relative;
+  /* padding: 0 1rem; */
+}
+
+.stat-box strong {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.stat-box p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Add vertical divider to all but the last box */
+.stat-box:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  position: absolute;
+  top: -25%;
+  bottom: -25%;
+  right: 8px;
+  width: 1px;
+  background-color: black;
+  opacity: 0.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image,
+  .about-text {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-box {
+    width: 100%;
+    text-align: left;
+  }
+  .about-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .stat-box {
+    padding: 0;
+  }
+
+  .stat-box::after {
+    display: none; /* Hide dividers */
+  }
+}
+

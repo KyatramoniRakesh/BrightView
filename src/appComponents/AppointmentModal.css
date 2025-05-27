@@ -1,0 +1,154 @@
+.appointment-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+.appointment-modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.title .blue {
+  color: #007bff;
+}
+
+.title .yellow {
+  color: #f1c40f;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.appointment-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.appointment-form input,
+.appointment-form select {
+  margin-top: 0.3rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.appointment-form select {
+  background-color: #fff;
+}
+
+.phone-input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.4rem 0.6rem;
+  margin-top: 0.3rem;
+}
+
+.phone-input-wrapper .flag {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  white-space: nowrap;
+  color: #333;
+}
+
+.phone-input-wrapper input.phone-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  padding: 0.4rem 0;
+}
+
+
+.submit-btn {
+  padding: 0.6rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 576px) {
+  .appointment-modal {
+    padding: 1.5rem 1rem;
+    max-width: 90%;
+  }
+
+  .submit-btn {
+    font-size: 0.95rem;
+  }
+
+  .phone-input-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+}

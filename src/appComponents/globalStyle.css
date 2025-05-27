@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+
+:root {
+  --primary-color: #2E8CFE;
+  --secondary-color: #52A97A;
+  --complementary-color: #B89B10;
+  --accent-color: #4D4D4D;
+
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Source Sans Pro', sans-serif;
+
+  --text-color: #000;
+  --bg-color: #fff;
+
+  --rounded-pill: 50rem;
+  --container-padding: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: var(--container-padding);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
+}
+
+h1 { font-size: 2.5rem; font-weight: 700; }     
+h2 { font-size: 2.25rem; font-weight: 700; }    
+h3 { font-size: 2rem; font-weight: 700; }      
+h4 { font-size: 1.875rem; }                     
+h5 { font-size: 2rem; }                         
+h6 { font-size: 1.625rem; }                    
+
+p, span, li, a {
+  font-size: 16px;
+}
+
+.p1 { font-size: 18px; }
+.p2 { font-size: 16px; }
+.p3 { font-size: 14px; }
+
+
+.navbar a {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+  border-radius: var(--rounded-pill);
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #1b73e8;
+  border-color: #1b73e8;
+  color: #fff;
+}
+
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.rounded-pill {
+  border-radius: var(--rounded-pill) !important;
+}
+
+.container-gap {
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}

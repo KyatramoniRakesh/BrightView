@@ -1,0 +1,22 @@
+import React from 'react'
+import './appComponents/globalStyle.css';
+import Navbar from './appComponents/Navbar';
+import Banner from './appComponents/Banner';
+import AboutUs from './appComponents/AboutUs';
+import Services from './appComponents/Services';
+import SpecialistsAndNews from './appComponents/Specialists';
+import Testimonial from './appComponents/Testimonials';
+
+const Home = () => {
+    return (
+        <>
+            <Navbar />
+            <Banner />
+            <AboutUs />
+            <Services />
+            <SpecialistsAndNews />
+            <Testimonial />
+        </>
+    )
+}
+export default Home;
