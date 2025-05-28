@@ -74,6 +74,9 @@ const Testimonial = () => {
 
       
       <div className="map-overlay">
+        <h2 >
+          Our <span className="highlight" id="">Location</span>
+        </h2>
         <div className="map-card">
           <div className="map-card-header">
             <h3>Bright View Eye Care Hospital</h3>

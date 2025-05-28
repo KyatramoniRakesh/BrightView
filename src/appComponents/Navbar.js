@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
 import AppointmentModal from "./AppointmentModal";
+import AllServices from "./AllServices/AllServices";
+import { Link } from 'react-router-dom';
+import Home from "../Home";
 
 
 const Navbar = () => {
@@ -12,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top Info Bar */}
-<div className="top-info-bar py-1 px-3 d-none d-lg-flex justify-content-end align-items-center bg-light text-muted small">
+<div className="top-info-bar py px-1 d-none d-lg-flex justify-content-end align-items-center text-muted small">
   <div className="d-flex align-items-center gap-4">
     <div className="d-flex align-items-center gap-2">
       <img src="Images/Vector (2).png" alt="Location" height="16" />
@@ -79,7 +82,7 @@ const Navbar = () => {
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav align-items-lg-center gap-lg-2">
               <li className="nav-item">
-                <a className="nav-link active" href="#">Home</a>
+                <Link className="nav-link active" to="/">Home</Link>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
@@ -87,21 +90,23 @@ const Navbar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li><a className="dropdown-item" href="#services">Our Best Service</a></li>
+                  {/* <li><Link className="dropdown-item" to={AllServices}>Our Best Service</Link></li> */}
                   <li><a className="dropdown-item" href="#services2">Specialists</a></li>
                 </ul>
               </li>
               <li className="nav-item"><a className="nav-link" href="#">Doctors</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">About Us</a></li>
+              <li className="nav-item"><Link className="nav-link" to="/about">About Us</Link></li>
+              {/* <li className="nav-item"><Link className="nav-link" to={Home}></Link></li> */}
               <li className="nav-item"><a className="nav-link" href="#">Contact Us</a></li>
 
               {/* CTA Button */}
               <li className="nav-item ms-lg-3 mt-3 mt-lg-0">
                 <a
                   href="#"
-                  className="btn btn-primary text-white px-4 d-flex align-items-center gap-2"
+                  className="btn btn-primary fw-semibold text-white px-4 d-flex align-items-center gap-2"
                   onClick={handleOpen}
                 >
-                  <img src="images/Calander.png" alt="Calendar" height="18" />
+                  {/* <img src="images/Calander.png" alt="Calendar" height="18" /> */}
                   Book Appointment
                   {/* <span className="arrow-icon">→</span> */}
                 </a>

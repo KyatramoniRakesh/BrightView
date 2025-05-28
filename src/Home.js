@@ -6,6 +6,8 @@ import AboutUs from './appComponents/AboutUs';
 import Services from './appComponents/Services';
 import SpecialistsAndNews from './appComponents/Specialists';
 import Testimonial from './appComponents/Testimonials';
+import AllServices from './appComponents/AllServices/AllServices';
+
 
 const Home = () => {
     return (

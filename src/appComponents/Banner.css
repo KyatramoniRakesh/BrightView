@@ -25,13 +25,16 @@
 }
 
 .banner-subtitle {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin: 0.5rem 0 1rem;
 }
 
-.highlight {
+.highlight1 {
   color: yellow;
+  font-size: 2.5rem;
+  font-weight: bold;
+
 }
 
 .banner-main-btn {
@@ -77,12 +80,14 @@
 }
 
 
+
 @media (max-width: 768px) {
   .banner-section {
     background-size: cover;
     background-position: center;
-    height:min-content;
+    height: min-content;
     padding: 2rem 1rem;
+
   }
 
   .banner-content {
@@ -108,14 +113,22 @@
   .banner-side-buttons {
     flex-direction: column;
     align-items: center;
-    bottom: 0rem;
-    right: 0rem;
+    bottom: 3px;
+    right: -4rem;
     gap: 0.5rem;
+    right: -4rem;
+    width: 164px;
+
   }
 
   .side-btn {
     font-size: 0.8rem;
     padding: 0.5rem 1rem;
   }
-}
 
+  .stat-box strong {
+    text-align: center;
+  }
+
+ 
+}

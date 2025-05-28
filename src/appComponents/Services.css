@@ -11,8 +11,9 @@
   margin-bottom: 0.5rem;
 }
 
-.services-header .highlight {
+.services-header .highlight2 {
   color: #007bff;
+  font-size: 1 rem;
 }
 
 .services-header p {
@@ -28,8 +29,8 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem 0;
   justify-items: center;
-  /* padding: 8rem;
-  padding-top: 0; */
+  
+
 }
 
 .service-card {

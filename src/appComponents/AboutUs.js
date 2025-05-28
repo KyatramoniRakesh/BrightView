@@ -5,7 +5,7 @@ import eyeCheckImage from '../Images/doctor-performing-vision-test-patient.png';
 const AboutUs = () => {
   return (
     <section className="about-section">
-      <h2 className="about-title"><strong>About Us</strong></h2>
+      <h2 className="about-title"><strong>About <span> Us</span></strong></h2>
 
       <div className="about-container">
         {/* Image Section */}

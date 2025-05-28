@@ -1,0 +1,13 @@
+.about-hero {
+  /* background-image: url('/images/b.png');  */
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  position: relative;
+}
+
+.breadcrumb-text {
+  font-size: 0.9rem;
+  color: #f0f0f0;
+  margin-bottom: 0.5rem;
+}

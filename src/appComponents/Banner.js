@@ -6,9 +6,9 @@ const BannerSection = () => {
     <div className="banner-section" style={{ backgroundImage: `url('/images/Group 1000006270.png')`, }}>
       <div className="banner-content">
         <h1 className="banner-title">Eye Specialists</h1>
-        <h2 className="banner-subtitle">You Can <span className="highlight">Trust</span></h2>
-        <button className="banner-main-btn">
-          <img src="images/Calander.png" alt="Calendar" height="18" /> Book Appointment
+        <h2 className="banner-subtitle">You Can <span className="highlight1">Trust</span></h2>
+        <button className="banner-main-btn fw-semibold">
+           Book Appointment
         </button>
       </div>
       <div className="banner-side-buttons">

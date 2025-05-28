@@ -21,7 +21,7 @@ const Services = () => {
           Our Best <span className="highlight" id="">Services</span>
         </h2>
         <p>
-          At <span className="highlight">Bright View</span> Eye Hospital, we are dedicated to delivering
+          At <span className="highlight2">Bright View</span> Eye Hospital, we are dedicated to delivering
           world-class eye care with compassion, precision, and the latest technology.
         </p>
       </div>
@@ -29,7 +29,7 @@ const Services = () => {
         {services.map((service, index) => (
           <div className="service-card" key={index}>
             <img src={service.img} alt={service.title} className="service-image" />
-            <div className="service-title">{service.title}</div>
+            {/* <div className="service-title">{service.title}</div> */}
           </div>
         ))}
       </div>  

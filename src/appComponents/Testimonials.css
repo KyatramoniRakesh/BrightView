@@ -32,12 +32,12 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
-  margin-top: -6rem;
+  margin-top: -8rem;
 }
 
 .testimonial-main-image {
-  width: 120px;
-  height: 120px;
+  width: 170x;
+  height: 178px;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid white;
@@ -117,10 +117,12 @@
 .map-overlay {
   position: relative;
 }
-
+.map-overlay h2 {
+  font-weight: bold;
+}
 .map-card {
   position: absolute;
-  top: 20px;
+  top: 65px;
   left: 75px;
   background: white;
   padding: 1rem;
@@ -282,56 +284,99 @@
 }
 
 
-@media (max-width: 600px) {
-  .map-card {
-    top: 10px;
-    left: 10px;
-    max-width: 90%;
-    font-size: 0.8rem;
-  }
-}
-@media (max-width: 768px) {
-  .testimonial-carousel {
-    padding: 1rem;
+/* === RESPONSIVE STYLES === */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .testimonial-container {
+    padding: 1.5rem;
   }
 
-  .testimonial-side-images {
-    top: 30px;
-    max-width: 250px;
-  }
-
-  .testimonial-side-images img {
+  .side-avatar {
     width: 50px;
     height: 50px;
   }
 
-  .testimonial-center-image img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .testimonial-text {
-    padding: 0 1rem;
+  .map-card {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    max-width: calc(100% - 40px);
     font-size: 0.95rem;
   }
 
-  .testimonials-section h2 {
-    font-size: 1.5rem;
+  .map-card p {
+    padding-right: 0;
   }
 }
 
-@media (max-width: 480px) {
-  .testimonial-side-images {
-    display: none; /* Hide on very small devices */
-  }
-
-  .testimonial-center-image img {
+/* Small Tablets / Large Mobiles */
+@media (max-width: 768px) {
+  .testimonial-image {
     width: 100px;
     height: 100px;
-    
+  }
+
+  .side-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .top-left, .top-right {
+    top: 10%;
+  }
+
+  .bottom-left, .bottom-right {
+    bottom: 10%;
+  }
+
+  .map-card {
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra Small Mobiles */
+@media (max-width: 480px) {
+  .testimonial-container {
+    padding: 1rem;
+    margin: 2rem 1rem;
+  }
+
+  .testimonial-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .side-avatar {
+    display: none;
   }
 
   .testimonial-text {
     font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .map-card {
+    position: static;
+    margin: 1rem auto;
+    max-width: 100%;
+    font-size: 0.85rem;
+    padding: 0.75rem;
+  }
+
+  .map-card h5 {
+    font-size: 1rem;
+  }
+
+  .map-card p {
+    font-size: 0.8rem;
   }
 }
