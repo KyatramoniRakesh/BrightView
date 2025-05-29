@@ -19,10 +19,10 @@
   padding: 2rem;
   position: relative;
   margin-bottom: 1rem;
-  margin-top:7rem;
+  margin-top: 7rem;
   height: 20rem;
   margin-left: -1rem;
-    margin-right: -1rem;
+  margin-right: -1rem;
 
 }
 
@@ -42,7 +42,7 @@
   object-fit: cover;
   border: 5px solid white;
   z-index: 2;
-  
+
 }
 
 .side-avatar {
@@ -106,187 +106,13 @@
   opacity: 1;
 }
 
- .location-map-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.map-overlay {
-  position: relative;
-}
-.map-overlay h2 {
-  font-weight: bold;
-}
-.map-card {
-  position: absolute;
-  top: 65px;
-  left: 75px;
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  z-index: 10;
-  max-width: 300px;
-  font-size: 0.9rem;
-}
-
-.map-card h3 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  text-align: justify;
-}
-
-.map-card p {
-  margin: 0.3rem 0;
-  line-height: 1.4;
-  color: #333;
-      text-align: justify;
-          padding-right: 3rem;
-}
-
-.map-card .rating {
-  color: #ffa500;
-  font-weight: bold;
-  ;
-}
-.review-count {
-  color: #1877f2;
-  font-weight: normal;
-}
-
-.map-card a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #1877f2;
-  font-weight: 500;
-  text-decoration: underline;
-}
-.map-card-header {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.map-card-logo {
-  width: 60px;
-  height: 75px;
-  object-fit: contain;
-  border-radius: 4px;
-}
 
 
-.footer {
-  background-color: #f9f9f9;
-  padding: 2rem 1rem;
-  margin-top: 3rem;
-  border-top: 1px solid #eee;
-}
 
 
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* max-width: 1200px; */
-  margin: 0 auto;
-  gap: 2rem;
-}
-
-.footer-column {
-  flex: 1 1 200px;
-  min-width: 200px;
-}
-
-.footer-logo {
-  width: 120px;
-  margin-bottom: 1rem;
-  margin-right: 13rem;
-}
-
-.footer-column h4 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-  text-align: justify;
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-  text-align: justify;
-}
-
-.footer-column li {
-  margin-bottom: 0.5rem;
-  cursor: pointer;
-}
-
-.footer-column p {
-  margin-bottom: 0.5rem;
-  text-align: justify;
-}
-
-.footer-social {
-  display: flex;
-  gap: 0rem;
-  margin-top: 1rem;
-  justify-content: start;
-}
-
-.footer-social a {
-  font-size: 1.2rem;
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-.footer-social a:hover {
-  color: #0077b5; 
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 2rem;
-  border-top: 1px solid #ddd;
-  padding-top: 1rem;
-  font-size: 0.9rem;
-}
-.footer-column i {
-  margin-right: 8px;
-  color: #444;
-  width: 20px;
-}
-
-.contact-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 0.8rem;
-}
-
-.contact-item i {
-  font-size: 1rem;
-  margin-top: 4px;
-  color: #444;
-  width: 20px;
-}
-
-.contact-item span,
-.address-text {
-  line-height: 1.5;
-  color: #333;
-  font-size: 0.95rem;
-  text-align: justify;
-}
 
 
-/* === RESPONSIVE STYLES === */
 
-/* Tablets */
 @media (max-width: 1024px) {
   .testimonial-container {
     padding: 1.5rem;
@@ -297,17 +123,6 @@
     height: 50px;
   }
 
-  .map-card {
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    max-width: calc(100% - 40px);
-    font-size: 0.95rem;
-  }
-
-  .map-card p {
-    padding-right: 0;
-  }
 }
 
 /* Small Tablets / Large Mobiles */
@@ -322,21 +137,16 @@
     height: 40px;
   }
 
-  .top-left, .top-right {
+  .top-left,
+  .top-right {
     top: 10%;
   }
 
-  .bottom-left, .bottom-right {
+  .bottom-left,
+  .bottom-right {
     bottom: 10%;
   }
 
-  .map-card {
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
 
   .testimonial-text {
     font-size: 0.95rem;
@@ -364,19 +174,5 @@
     padding: 0.5rem;
   }
 
-  .map-card {
-    position: static;
-    margin: 1rem auto;
-    max-width: 100%;
-    font-size: 0.85rem;
-    padding: 0.75rem;
-  }
 
-  .map-card h5 {
-    font-size: 1rem;
-  }
-
-  .map-card p {
-    font-size: 0.8rem;
-  }
 }

@@ -7,6 +7,8 @@ import Services from './appComponents/Services';
 import SpecialistsAndNews from './appComponents/Specialists';
 import Testimonial from './appComponents/Testimonials';
 import AllServices from './appComponents/AllServices/AllServices';
+import Footer from './appComponents/Footer'
+import Map from './appComponents/Map';
 
 
 const Home = () => {
@@ -18,6 +20,8 @@ const Home = () => {
             <Services />
             <SpecialistsAndNews />
             <Testimonial />
+            <Map/>
+            <Footer/>
         </>
     )
 }

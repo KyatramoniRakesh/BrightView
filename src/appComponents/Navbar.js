@@ -18,11 +18,11 @@ const Navbar = () => {
 <div className="top-info-bar py px-1 d-none d-lg-flex justify-content-end align-items-center text-muted small">
   <div className="d-flex align-items-center gap-4">
     <div className="d-flex align-items-center gap-2">
-      <img src="Images/Vector (2).png" alt="Location" height="16" />
+      <img src="Images/location-icon.png" alt="Location" height="16" />
       <span>H.O. 6-3-1092/A, A-Block , Shanti Sikhara Apartments</span>
     </div>
     <div className="d-flex align-items-center gap-2">
-      <img src="Images/PhonePlus.png" alt="Phone" height="16" />
+      <img src="Images/Globe-icon.png" alt="Phone" height="16" />
       <span>7207573049</span>
     </div>
     <div className="dropdown">

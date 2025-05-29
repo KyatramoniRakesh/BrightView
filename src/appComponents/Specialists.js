@@ -133,8 +133,9 @@ const SpecialistsAndNews = () => {
                 <span className="news-date">
                   <img src="images/Calendar2.png" alt="calendar" className="calendar-icon" />
                   {item.date}
+                  <hr></hr>
                 </span>
-
+                
                 <p>{item.text}</p>
                 <a href="#" className="read-more">Readmore...</a>
               </div>
