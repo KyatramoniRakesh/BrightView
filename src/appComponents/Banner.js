@@ -12,13 +12,14 @@ const BannerSection = () => {
         </button>
       </div>
       <div className="banner-side-buttons">
-        <button className="side-btn">
-          <img src="images/Calander.png" alt="Calendar" height="18" />
-           Book Appointment
-        </button>
+        <button className="side-btn book-btn-mobile-hide">
+  <img src="images/Calander.png" alt="Calendar" height="18" id="book-app"/>
+  Book Appointment
+</button>
+
         <button className="side-btn whatsapp">
-          <i className="fab fa-whatsapp"></i> Chat With Us
-        </button>
+    <i className="fab fa-whatsapp"></i> Chat With Us
+  </button>
       </div>
     </div>
   );

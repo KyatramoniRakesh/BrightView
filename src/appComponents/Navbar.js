@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
 import AppointmentModal from "./AppointmentModal";
-import AllServices from "./AllServices/AllServices";
+// import AllServices from "./AllServices/AllServices";
 import { Link } from 'react-router-dom';
 import Home from "../Home";
+import Contactus from "./ContactUs/Contactus";
 
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Top Info Bar */}
+      {/*  upper/top navbar */}
 <div className="top-info-bar py px-1 d-none d-lg-flex justify-content-end align-items-center text-muted small">
   <div className="d-flex align-items-center gap-4">
     <div className="d-flex align-items-center gap-2">
@@ -22,7 +23,7 @@ const Navbar = () => {
       <span>H.O. 6-3-1092/A, A-Block , Shanti Sikhara Apartments</span>
     </div>
     <div className="d-flex align-items-center gap-2">
-      <img src="Images/Globe-icon.png" alt="Phone" height="16" />
+      <img src="Images/PhonePlus.png" alt="Phone" height="16" />
       <span>7207573049</span>
     </div>
     <div className="dropdown">
@@ -51,7 +52,6 @@ const Navbar = () => {
       {/* Main Navbar */}
       <nav className="navbar navbar-expand-lg bg-white shadow-sm py-1">
         <div className="container">
-          {/* Logo Section */}
           <a className="navbar-brand d-flex align-items-center" href="#">
             <img
               src="./images/Logonew.jpg"
@@ -78,7 +78,6 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          {/* Nav Items */}
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav align-items-lg-center gap-lg-2">
               <li className="nav-item">
@@ -97,9 +96,8 @@ const Navbar = () => {
               <li className="nav-item"><a className="nav-link" href="#">Doctors</a></li>
               <li className="nav-item"><Link className="nav-link" to="/about">About Us</Link></li>
               {/* <li className="nav-item"><Link className="nav-link" to={Home}></Link></li> */}
-              <li className="nav-item"><a className="nav-link" href="#">Contact Us</a></li>
+              <li className="nav-item"><Link className="nav-link" to='/contactus'>Contact Us</Link></li>
 
-              {/* CTA Button */}
               <li className="nav-item ms-lg-3 mt-3 mt-lg-0">
                 <a
                   href="#"

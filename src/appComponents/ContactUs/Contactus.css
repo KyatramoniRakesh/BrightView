@@ -1,0 +1,19 @@
+.img-msg {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-img img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.msg-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
