@@ -3,8 +3,13 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer" style={{ backgroundImage: `url('/images/mdi_eye-outline.png')`, }}>
-      <div className="footer-content">
+    <footer className="footer" style={{ backgroundImage: `url('/images/mdi_eye-outline.png')`,
+      backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: '500px auto', // controls image size only
+    width: '100%'
+    }}>
+      <div className="footer-content" >
         <div className="footer-column">
           <img
             src="/images/Logonew.jpg"
