@@ -1,3 +1,20 @@
+.top-info-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; 
+  background-color: #f8f9fa; 
+  margin-left: -2rem;
+  padding-bottom: 0px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1020;
+}
+
+
 .me-2 {
   height: 4.5rem;
   margin-left: -4rem;
@@ -52,13 +69,11 @@
 }
 
 
-/* ------- */
 
 
-/* Optional: Make text center aligned on smaller screens */
 @media (max-width: 576px) {
   .me-2 {
-  margin-left: 0 !important; /* Fix the shift issue */
+  margin-left: 0 !important;
   height: 3rem;
   margin-left: 5px;
 }
@@ -74,4 +89,20 @@
   .logo-text small {
     font-size: 0.9rem;
   }
+  .top-info-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; 
+  background-color: #f8f9fa; 
+  margin-left: -2rem;
+  padding-bottom: 0px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1020;
+}
+
 }

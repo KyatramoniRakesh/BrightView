@@ -81,7 +81,7 @@ const SpecialistsAndNews = () => {
           Meet Our <span className="highlight" id="services2">Specialists</span>
         </h2>
 
-        <div id="specialistCarousel" className="carousel slide" data-bs-ride="carousel">
+        <div id="specialistCarousel" className="carousel slide"   data-bs-ride={window.innerWidth >= 768 ? "carousel" : null}>
           <div className="carousel-inner">
             {Array.from({ length: Math.ceil(specialists.length / 4) }, (_, index) => (
               <div

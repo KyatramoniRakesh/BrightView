@@ -4,12 +4,12 @@ import "./Services.css";
 // Use relative public path directly in src attribute
 const services = [
   { title: "Cataract", img: "/images/Component 1.png" },
-  { title: "Glaucoma", img: "/images/Component 2.png"  },
-  { title: "Retina", img: "/images/Component 3.jpg"  },
-  { title: "Oculoplasty", img: "/images/Component 4.png"  },
-  { title: "Refractive", img: "/images/Component 5.png"  },
-  { title: "Opticals", img: "/images/Component 6.png"  },
-  { title: "Neuro Ophthalmology", img: "/images/Component 7.png"  },
+  { title: "Glaucoma", img: "/images/Component 2.png" },
+  { title: "Retina", img: "/images/Component 3.jpg" },
+  { title: "Oculoplasty", img: "/images/Component 4.png" },
+  { title: "Refractive", img: "/images/Component 5.png" },
+  { title: "Opticals", img: "/images/Component 6.png" },
+  { title: "Neuro Ophthalmology", img: "/images/Component 7.png" },
   { title: "Upcoming", img: "/images/Component 8.png" },
 ];
 
@@ -31,11 +31,22 @@ const Services = () => {
             <img src={service.img} alt={service.title} className="service-image" />
             {/* <div className="service-title">{service.title}</div> */}
           </div>
+
         ))}
-      </div>  
+      </div>
+      {/* <div className="container">
+  <div className="row">
+    {services.map((service, index) => (
+      <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" key={index}>
+        <img className="img-fluid w-100 rounded  image-hover shadow-sm" src={service}  />
+      </div>
+    ))}
+  </div>
+</div> */}
+
     </section>
-   
-    
+
+
   );
 };
 

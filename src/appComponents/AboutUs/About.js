@@ -3,6 +3,7 @@ import Navbar from '../Navbar';
 import './About.css';
 import Footer from '../Footer';
 import "bootstrap/dist/css/bootstrap.min.css";
+// import polygonimg from "./images/polygon.png"
 
 const About = () => {
   return (
@@ -82,7 +83,7 @@ const About = () => {
     <div className="dashed-line horizontal"></div>
 
     <div className="service-box text-start">
-      <img src="/images/polygon.png" alt="Surgery" className="service-icon" />
+      <img src="./images/polygon.png" alt="Surgery" className="service-icon" />
       <h5 className="fw-bold mt-3">Surgery</h5>
       <p className="mb-0 text-start">
         Squint
